@@ -1,17 +1,5 @@
-# irrigation
+# Irrigation
 
-A new Flutter project.
+This project is thought to reduce the waste of water at the time of watering any green area, of which this idea was thought as a team outside the institution of which we studied, therefore this idea is only ours and nobody else's.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Proyect_irrigation
+This project will have a mobile app made with the framwork flutter and the dart language as well as the circuit to manage the sprinklers, sensors and other components.
