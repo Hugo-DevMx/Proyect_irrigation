@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:irrigation/infracstucture/Screens/onboarding.dart';
 import 'package:irrigation/widgets/buttons.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class LoginStart extends StatelessWidget {
+  const LoginStart({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +19,11 @@ class LoginScreen extends StatelessWidget {
       Container(
         margin: const EdgeInsets.symmetric(vertical: 40),
         child: Buttons(
-          buttonText: 'Iniciar Sesion', 
-          onPressed: (){}, 
+          buttonText: 'Comenzemos', 
+          onPressed: (){
+            Navigator.push(
+                          context, MaterialPageRoute(builder: (_) => const Oboarding()));
+          }, 
           padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),)
       ),
       Column(
