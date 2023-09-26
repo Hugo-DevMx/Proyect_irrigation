@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:irrigation/infracstucture/Screens/onboarding.dart';
 import 'package:irrigation/widgets/buttons.dart';
 
@@ -32,7 +33,7 @@ class LoginStart extends StatelessWidget {
         children: [
           Column(
               children: [
-                Image.asset('assets/images/logo blanco.png', width: 230),
+                SvgPicture.asset('assets/images/logo.svg', width: 230),
                 Container(
                   margin: const EdgeInsets.symmetric(vertical: 35),
                   color: const Color.fromARGB(150, 0, 0, 0),

@@ -96,7 +96,7 @@ class _OboardingState extends State<Oboarding> {
                   
                 if (currentIndex == contents.length - 1) {
                       Navigator.push(
-                          context, MaterialPageRoute(builder: (_) => const SinginScreen()));
+                          context, MaterialPageRoute(builder: (_) =>  const SinginScreen()));
                     }
                     _controller.nextPage(
                         duration: const Duration(milliseconds: 500),
