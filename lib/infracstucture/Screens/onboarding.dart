@@ -28,14 +28,19 @@ class _OboardingState extends State<Oboarding> {
   }
 
   @override
+  void didChangeDependencies() {
+    precacheImage(AssetImage("assets/images/fondoSingin.jpeg"), context);
+    super.didChangeDependencies();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/backgroundImage1.jpeg'),
-                fit: BoxFit.cover)
-                ),
+                fit: BoxFit.cover)),
         child: Column(
           children: [
             Expanded(
@@ -60,24 +65,25 @@ class _OboardingState extends State<Oboarding> {
                           ),
                           const SizedBox(height: 20),
                           Text(
-                              contents[i].title,
-                              maxLines: 1,
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                  fontSize: 22, fontWeight: FontWeight.bold, fontFamily: 'Chroma'),
+                            contents[i].title,
+                            maxLines: 1,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Chroma'),
                           ),
                           const SizedBox(height: 20),
                           Text(
                             contents[i].discription,
                             textAlign: TextAlign.center,
-                            style:
-                                const TextStyle(fontSize: 16, fontFamily: 'Chroma'),
+                            style: const TextStyle(
+                                fontSize: 16, fontFamily: 'Chroma'),
                           )
                         ],
                       ),
                     );
-                  }
-                  ),
+                  }),
             ),
             Container(
               child: Row(
@@ -91,19 +97,22 @@ class _OboardingState extends State<Oboarding> {
               height: 60,
               margin: const EdgeInsets.symmetric(vertical: 40),
               child: Buttons(
-                buttonText:currentIndex == contents.length -1 ? 'Singin': 'Next', 
-                onPressed: (){
-                  
-                if (currentIndex == contents.length - 1) {
-                      Navigator.push(
-                          context, MaterialPageRoute(builder: (_) =>  const SinginScreen()));
-                    }
-                    _controller.nextPage(
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeInOut);
-                  }, 
-                padding: const EdgeInsets.symmetric(horizontal: 120, vertical: 10),
-                ),
+                buttonText:
+                    currentIndex == contents.length - 1 ? 'Singin' : 'Next',
+                onPressed: () {
+                  if (currentIndex == contents.length - 1) {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => const SinginScreen()));
+                  }
+                  _controller.nextPage(
+                      duration: const Duration(milliseconds: 500),
+                      curve: Curves.easeInOut);
+                },
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 120, vertical: 10),
+              ),
             )
           ],
         ),
