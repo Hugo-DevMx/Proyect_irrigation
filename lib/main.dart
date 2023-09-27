@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:irrigation/Screens/login.dart';
+import 'package:irrigation/infracstucture/Screens/loginStart.dart';
 
 
 void main() => runApp(const MyApp());
@@ -8,10 +8,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Material App',
+    return  MaterialApp(
+      theme: ThemeData(primaryColor: const Color.fromARGB(255, 8, 75, 51)),
       debugShowCheckedModeBanner: false,
-      home: LoginScreen()
+      home: const LoginStart()
     );
   }
 }
