@@ -20,7 +20,7 @@ class _SinginScreenState extends State<SinginScreen> {
         body: SingleChildScrollView(
       physics: const ClampingScrollPhysics(),
       child: Container(
-        decoration: const BoxDecoration(
+            decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/fondoSingin.jpeg'),
                 fit: BoxFit.fill)),
@@ -82,8 +82,8 @@ class _SinginScreenState extends State<SinginScreen> {
                         Buttons(
                             buttonText: 'Inciar Sesion',
                             onPressed: () {
-                               Navigator.push(
-                          context, MaterialPageRoute(builder: (_) =>  const HomeScreen()));
+                              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (BuildContext context) => const HomeScreen()));
                             },
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 60, vertical: 10)),
