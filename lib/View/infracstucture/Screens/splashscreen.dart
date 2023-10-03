@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:irrigation/infracstucture/Screens/loginStart.dart';
+import 'package:irrigation/View/infracstucture/Screens/loginStart.dart';
 import 'package:jumping_dot/jumping_dot.dart';
 
 class SplashScreen extends StatefulWidget {

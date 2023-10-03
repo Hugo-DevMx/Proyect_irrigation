@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:irrigation/infracstucture/Screens/home.dart';
-import 'package:irrigation/widgets/buttons.dart';
+import 'package:irrigation/View/infracstucture/Screens/home.dart';
+import 'package:irrigation/View/widgets/buttons.dart';
 
 class SinginScreen extends StatefulWidget {
 

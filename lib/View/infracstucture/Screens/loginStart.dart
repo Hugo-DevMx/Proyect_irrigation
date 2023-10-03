@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:irrigation/infracstucture/Screens/onboarding.dart';
-import 'package:irrigation/widgets/buttons.dart';
+import 'package:irrigation/View/infracstucture/Screens/onboarding.dart';
+import 'package:irrigation/View/widgets/buttons.dart';
 
 class LoginStart extends StatelessWidget {
   const LoginStart({super.key});

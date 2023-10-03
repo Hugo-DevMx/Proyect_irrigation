@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:irrigation/domain/content_onboardings_model.dart';
-import 'package:irrigation/infracstucture/Screens/singin.dart';
-import 'package:irrigation/widgets/buttons.dart';
+import 'package:irrigation/Model/domain/content_onboardings_model.dart';
+import 'package:irrigation/View/infracstucture/Screens/singin.dart';
+import 'package:irrigation/View/widgets/buttons.dart';
 
 class Oboarding extends StatefulWidget {
   const Oboarding({super.key});
@@ -29,7 +29,7 @@ class _OboardingState extends State<Oboarding> {
 
   @override
   void didChangeDependencies() {
-    precacheImage(AssetImage("assets/images/fondoSingin.jpeg"), context);
+    precacheImage(const AssetImage("assets/images/fondoSingin.jpeg"), context);
     super.didChangeDependencies();
   }
 
