@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220838542476",
+    "project_id": "irrigation-813bc",
+    "storage_bucket": "irrigation-813bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220838542476:android:0017a73ebb245ae4068fa9",
+        "android_client_info": {
+          "package_name": "com.example.irrigation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF7fvhWrpAvI9kaUCE__rdCHfiUGMZfsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

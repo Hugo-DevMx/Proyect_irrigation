@@ -1,0 +1,37 @@
+[
+    {
+        "id": "0",
+        "name": "Area 1",
+        "type": "Arbusto",
+        "imageUrl": "assets/images/arbusto.png",
+        "state": "Saludable"
+    },
+    {
+        "id": "1",
+        "name": "Area 2",
+        "type": "Campo de Futbol",
+        "imageUrl": "assets/images/futbol.png",
+        "state": "Peligro"
+    },
+    {
+        "id": "2",
+        "name": "Area 3",
+        "type": "Campo de riego",
+        "imageUrl": "assets/images/riego.jpeg",
+        "state": "Peligro"
+    },
+    {
+        "id": "3",
+        "name": "Area 4",
+        "type": "Campo de golf",
+        "imageUrl": "assets/images/golf.jpeg",
+        "state": "Saludable"
+    },
+    {
+        "id": "4",
+        "name": "Area 5",
+        "type": "Jardineras",
+        "imageUrl": "assets/images/jardinera.jpeg",
+        "state": "Peligro"
+    }
+]
